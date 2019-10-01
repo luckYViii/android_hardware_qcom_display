@@ -19,7 +19,7 @@ LOCAL_CLANG                   := true
 LOCAL_SHARED_LIBRARIES        := libsdmcore libqservice libbinder libhardware libhardware_legacy \
                                  libutils libcutils libsync libqdutils libqdMetaData \
                                  libdisplaydebug libsdmutils libc++ liblog libgrallocutils libui \
-                                 libgpu_tonemapper libhidlbase libhidltransport libdisplayconfig.qti \
+                                 libgpu_tonemapper libhidlbase libdisplayconfig.qti \
                                  vendor.display.config@2.0 \
                                  android.hardware.graphics.mapper@2.0 \
                                  android.hardware.graphics.mapper@2.1 \
