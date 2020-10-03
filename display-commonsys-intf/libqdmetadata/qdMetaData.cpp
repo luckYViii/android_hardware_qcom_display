@@ -142,7 +142,7 @@ static bool getGralloc4Array(MetaData_t *metadata, int32_t paramType) {
     case GET_S3D_FORMAT:
       return metadata->isVendorMetadataSet[GET_VENDOR_METADATA_STATUS_INDEX(QTI_S3D_FORMAT)];
     default:
-      ALOGE("paramType %d not supported", paramType);
+      ALOGV("paramType %d not supported", paramType);
       return false;
   }
 }
@@ -206,7 +206,7 @@ static void setGralloc4Array(MetaData_t *metadata, int32_t paramType, bool isSet
       metadata->isVendorMetadataSet[GET_VENDOR_METADATA_STATUS_INDEX(QTI_S3D_FORMAT)] = isSet;
       break;
     default:
-      ALOGE("paramType %d not supported in Gralloc4", paramType);
+      ALOGV("paramType %d not supported in Gralloc4", paramType);
   }
 }
 #else
